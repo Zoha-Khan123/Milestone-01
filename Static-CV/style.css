@@ -118,7 +118,7 @@ strong {
   width: 70%;
   margin: 0 auto;
   margin-top: 4rem;
-  gap: 20px;
+  gap: 30px;
 }
 
 button {
@@ -127,10 +127,18 @@ button {
   border: none;
   outline: none;
   background-color: rgb(255, 255, 255);
-  color: rgb(39, 95, 72);
+  color: rgb(28, 143, 105);
   font-weight: 700;
   font-size: large;
   border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: rgb(28, 143, 105);
+  color: rgb(255, 255, 255);
 }
 
 /* --------------------------------- main ---------------------------------------------- */
@@ -191,10 +199,10 @@ footer {
   margin: 5rem 0rem;
 }
 .footer {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   width: 70%;
   height: 70px;
-  color: rgb(0, 100, 62);
+  color: rgb(17, 141, 110);
   border-radius: 5px;
   font-size: x-large;
   font-weight: 700;
@@ -276,6 +284,7 @@ footer {
   .footer,
   .buttons {
     width: 80%;
+    gap: 20px;
   }
   .buttons,
   .main {
@@ -299,7 +308,7 @@ footer {
   /* ------------- main / button / footer -------------- */
   .main {
     grid-template-columns: 1fr;
-    grid-template-rows: 250px;
+    grid-template-rows: 300px;
   }
 }
 @media screen and (max-width: 791px) {
@@ -323,9 +332,6 @@ footer {
   }
   button {
     font-size: medium;
-  }
-  .main {
-    grid-template-rows: 300px;
   }
 }
 
@@ -418,5 +424,8 @@ footer {
   }
   .sections button {
     height: 50px;
+  }
+  .main {
+    grid-template-rows: 400px;
   }
 }
