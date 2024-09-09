@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static CV</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="top">
+          <div class="pic">
+            <img src="Pic.jpg" alt="" />
+          </div>
+
+          <div class="info">
+            <h3>Hello</h3>
+
+            <div class="name">
+              <p>I'm <strong>Zoha Khan</strong></p>
+              <h4>Front End Developer</h4>
+            </div>
+
+            <p><strong class="age">AGE</strong> 20</p>
+            <p>
+              <strong class="address">ADDRESS</strong> House No 114 Sector 4/D
+              Nazimabad
+            </p>
+            <p><strong class="email">E-MAIL</strong> zohakhan0010@gmail.com</p>
+            <p><strong class="phone">Phone</strong> +92 3012571926</p>
+            <p>
+              <strong class="job">Front End Developer</strong> till September
+              25,2023
+            </p>
+          </div>
+        </div>
+
+        <!-- links -->
+        <div class="links">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-github"></i>
+        </div>
+      </div>
+    </header>
+
+    <div class="sections">
+      <button onclick="showAllSections()">Section</button>
+    </div>
+
+    <div class="buttons">
+      <button onclick="toggleSection('education')">Education</button>
+      <button onclick="toggleSection('courses')">Other Courses</button>
+      <button onclick="toggleSection('languages')">Languages</button>
+      <button onclick="toggleSection('skills')">Skills</button>
+    </div>
+
+    <main>
+      <div class="main">
+        <div class="content-section education">
+          <h1>Education</h1>
+          <h3>Sir Syed Government Girls College, Nazimabad</h3>
+          <p><strong>Intermediate in Commerce</strong></p>
+          <p>
+            Relevant Coursework: Accounting, Business Mathematics, Economics
+          </p>
+          <p>
+            Achievements: Active Member of the Commerce Society, Top 5% in Class
+          </p>
+        </div>
+
+        <!-- Other Courses -->
+        <div class="content-section courses">
+          <h1>Other Courses</h1>
+          <h3>Governor House Sindh (GIAIC)</h3>
+          <p>
+            I am currently enrolled in the "Cloud Computing and Generative
+            Artificial Intelligence" program at Governor House Sindh, refining
+            my skills in advanced technologies. This course empowers me to
+            integrate cutting-edge cloud solutions and AI-driven innovations
+            into development projects, optimizing workflows and enhancing user
+            experiences.
+          </p>
+        </div>
+
+        <div class="content-section languages">
+          <h1>Languages</h1>
+          <p>English</p>
+          <p>Urdu</p>
+          <p>Pashto</p>
+        </div>
+
+        <div class="content-section skills">
+          <h1>Skills</h1>
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>Typescript</p>
+          <p>Javscript</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">Made by Zoha Khan</div>
+    </footer>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

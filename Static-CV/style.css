@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: rgb(137, 236, 190);
+}
+
+/* ------------------------- header ------------------------------------------------- */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 70vh;
+}
+.top {
+  display: flex;
+  height: 80%;
+  margin-top: 3rem;
+}
+.pic {
+  width: 40%;
+  text-align: center;
+}
+.pic img {
+  width: 320px;
+  height: 320px;
+}
+
+.info {
+  width: 60%;
+}
+p {
+  padding-top: 1rem;
+}
+.info h3 {
+  background-color: rgb(17, 141, 110);
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  font-size: 25px;
+}
+.info .name p strong {
+  font-size: 35px;
+}
+.info .name p {
+  font-size: xx-large;
+  padding-right: 2rem;
+  font-weight: 300;
+}
+.info .name h4 {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(192, 192, 192);
+  border-width: 20%;
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------------------- */
+
+/* equal all in same line */
+strong {
+  padding-right: 3rem;
+}
+.age {
+  padding-right: 11.5rem;
+}
+.address {
+  padding-right: 8.5rem;
+}
+.email {
+  padding-right: 10rem;
+}
+.phone {
+  padding-right: 10rem;
+}
+/* -------------------------------------------------------------------------------------- */
+.links {
+  background-color: rgb(9, 148, 113);
+  color: white;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.links i {
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ---------------------------- buttons ------------------------------------------- */
+.sections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+.sections button {
+  height: 80px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  gap: 20px;
+}
+
+button {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(39, 95, 72);
+  font-weight: 700;
+  font-size: large;
+  border-radius: 5px;
+}
+
+/* --------------------------------- main ---------------------------------------------- */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0rem;
+}
+.main {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 350px;
+  gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.main > div {
+  background-color: #fffdfd;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 5px;
+  /* border: 3px solid whitesmoke; */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+main div > h1 {
+  background-color: rgb(17, 141, 110);
+  height: 4vw;
+  width: 25vw;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: large;
+}
+main div > h3 {
+  font-weight: 500;
+}
+
+.education p strong {
+  font-size: medium;
+  font-weight: 600;
+}
+
+/* ------------------------------ footer ------------------------------------- */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem 0rem;
+}
+.footer {
+  background-color: rgb(247, 247, 247);
+  width: 70%;
+  height: 70px;
+  color: rgb(0, 100, 62);
+  border-radius: 5px;
+  font-size: x-large;
+  font-weight: 700;
+  text-align: center;
+  align-content: center;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------ header responsive ------------------------ */
+
+@media screen and (max-width: 1120px) {
+  .header {
+    width: 90%;
+    height: 80vh;
+  }
+  .pic {
+    text-align: none;
+  }
+  /* ------------- main -------------- */
+  .main,
+  .footer,
+  .buttons {
+    width: 90%;
+  }
+  .main > div h1 {
+    height: 6vw;
+  }
+}
+@media screen and (max-width: 997px) {
+  .info {
+    width: 65%;
+  }
+  .pic {
+    width: 35%;
+  }
+  .pic img {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: unset;
+    margin-top: 2rem;
+  }
+  .header {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: fit-content;
+  }
+  .pic {
+    width: unset;
+  }
+  .pic img {
+    border-radius: 50%;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+  }
+  .info {
+    width: unset;
+    padding-bottom: 3rem;
+  }
+  .info h3 {
+    font-size: xx-large;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+  }
+  .links {
+    height: 5rem;
+  }
+  /* ------------- main / button / footer -------------- */
+  .main,
+  .footer,
+  .buttons {
+    width: 80%;
+  }
+  .buttons,
+  .main {
+    margin-top: 3rem;
+  }
+  main {
+    margin: 0rem 0rem;
+  }
+  footer {
+    margin-top: 2rem;
+  }
+
+  .sections {
+    margin-top: 3rem;
+  }
+  .sections button {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 855px) {
+  /* ------------- main / button / footer -------------- */
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
+  }
+}
+@media screen and (max-width: 791px) {
+  .header {
+    width: 90%;
+  }
+  .info h3 {
+    font-size: x-large;
+    width: 100px;
+    text-align: center;
+  }
+  .pic img {
+    width: 250px;
+    height: 250px;
+  }
+  /* ------------- main / button / footer -------------- */
+  .main,
+  .footer,
+  .buttons {
+    width: 90%;
+  }
+  button {
+    font-size: medium;
+  }
+  .main {
+    grid-template-rows: 300px;
+  }
+}
+
+@media screen and (max-width: 637px) {
+  .pic img {
+    width: 200px;
+    height: 200px;
+  }
+  .header {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info p {
+    font-size: small;
+  }
+  /* ------------- main / button / footer -------------- */
+
+  .main > div h1 {
+    height: 10vw;
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 550px) {
+  .info .name p strong {
+    font-size: 25px;
+  }
+  .info .name p {
+    font-size: x-large;
+  }
+  .info .name h4 {
+    font-size: 15px;
+  }
+  .info p,
+  strong {
+    font-size: smaller;
+  }
+  .pic img {
+    width: 180px;
+    height: 180px;
+  }
+  .info p strong {
+    display: block;
+  }
+  .info h3 {
+    margin-top: 2rem;
+    font-size: medium;
+    width: 70px;
+  }
+  .links {
+    gap: 3rem;
+    height: 4rem;
+  }
+  .links i {
+    font-size: medium;
+  }
+  /* ------------- main / button / footer -------------- */
+
+  .main {
+    grid-template-rows: 350px;
+  }
+  .main > div h1 {
+    height: 12vw;
+    width: 50vw;
+  }
+
+  button {
+    width: 350px;
+    height: 50px;
+    font-size: smaller;
+  }
+  .buttons,
+  .main {
+    margin-top: 1.5rem;
+  }
+  .sections {
+    margin-top: 2rem;
+  }
+  .sections button {
+    height: 60px;
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  button {
+    width: 250px;
+    height: 50px;
+    font-size: x-small;
+  }
+  .sections button {
+    height: 50px;
+  }
+}
